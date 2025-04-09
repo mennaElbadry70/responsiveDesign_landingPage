@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout with Bootstrap Cards and Navbar</title>
+  <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/3665f4457a.js" crossorigin="anonymous"></script>
+
+  <style>
+.footer {
+      background-color: #000;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .card-img-top {
+      height: 150px; 
+      object-fit: cover;
+    }
+    
+
+    .about-section {
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .about-section {
+        padding: 10px;
+      }
+    }
+    .bottom-grid {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+    <div id="top"></div>
+
+
+<nav
+id="top"
+class="position-sticky top-0 left-0 container-fluid bg-body-tertiary navbar navbar-expand-lg d-flex justify-content-between">
+<a class="nav-link px-2" href="#">LOGO</a> 
+
+<div class="d-flex">
+
+    <a class="nav-link px-3" href="#">ABOUT</a>
+    <a class="nav-link px-3" href="#">TEAM</a>
+    <a class="nav-link px-3" href="#">SERVICE</a>
+</div>
+</nav>
+
+<div class="card text-bg-dark">
+    <img src="mac.jpg" class="card-img" alt="Your Image">
+    <div class="card-img-overlay">
+      <h1 class="card-title">Start Something That Matters</h1>
+      <br>
+      <h3 class="card-text">Stop Wasting your Time on projects that just isnt you </h3>
+      <br>
+      <br>
+      <button>learn more start today</button>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <h2>About The Company</h2>
+    <br>
+    <h4>Key Features of our company</h4>
+</div>
+<br>
+
+
+<div class="container-fluid row">
+    <div class="col-md-3 text-center">
+        <h1><i class="fa-solid fa-desktop"></i></h1>
+        <p<b>Do</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="col-md-3 text-center">
+        <h1><i class="fa-solid fa-heart"></i></h1>
+        <p<b>You</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="col-md-3 text-center">
+        <h1><i class="fa-solid fa-diamond"></i></h1>
+        <p<b>have</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="col-md-3 text-center">
+        <h1><i class="fa-solid fa-gears"></i></h1>
+        <p<b>Support</b></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</div>
+<br>
+
+<!-- Text Section -->
+<div class="container mt-4">
+  <div class="row">
+    <!-- Left Half (Text) -->
+    <div class="col-md-6">
+      <h2>careful what you wish for</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+      </p>
+    </div>
+    <!-- Right Half (Image) -->
+    <div class="col-md-6">
+      <img src="phone_buildings.jpg" class="img-fluid" alt="Responsive Image">
+    </div>
+  </div> <!-- /.row -->
+</div> <!-- /.container -->
+
+<!-- About Section -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 about-section">
+      <h2>people who look good in pics</h2>
+      <p>the one who got away</p>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div class="container-fluid row col-md-12 justify-content-between">
+        <div class="card col-md-3">
+            <div><img width="200px" src="./team1.jpg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+                <h5 class="card-title">Capitalism</h5>
+                <p class="card-text">i dont know what else to say but of course they will not put ugly girls
+                  </p>
+            </div>
+        </div>
+        <div class="card col-md-3">
+            <div><img width="200px" src="./team2.jpg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+                <h5 class="card-title">socialism</h5>
+                <p class="card-text">beauty impacts people a lot we cannot deny anyone who says otherwise is a lyer
+                    additional truth will never be buried.</p>
+            </div>
+        </div>
+        <div class="card col-md-3">
+            <div><img width="200px" src="./team3.jpg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+                <h5 class="card-title">communism</h5>
+                <p class="card-text">i dont know what to do with my life yet please can you offer any advice</p>
+            </div>
+        </div>
+        <div class="card col-md-3">
+            <div><img width="200px" src="./team4.jpg" class="card-img-top" alt="..."></div>
+            <div class="card-body">
+                <h5 class="card-title">Racism</h5>
+                <p class="card-text">some guy who was chocked by a police officer said once "i cant breathe"
+                   
+                 dont forget the us is built on stolen land.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center">
+    <div class="container-fluid row col-md-11 justify-content-around bg bg-secondary text-center p-5"
+        style="color:rgb(255, 255, 255)">
+        <div class="col-md-3 col-sm-6">
+            <h3>18+</h3>
+            <h4>officially adult</h4>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>17+</h3>
+            <h4>teenage confusion</h4>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>22+</h3>
+            <h4>adulthood shock</h4>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <h3>89+</h3>
+            <h4>the end </h4>
+        </div>
+    </div>
+
+    
+</div>
+<div class="d-flex flex-column justify-content-center">
+    <div class="text-center">
+        <h2>Our Work</h2>
+        <br>
+        <h4>what we've done to people cannot be forgiven</h4>
+    </div>
+
+    <div class="row text-center col-12">
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_camera.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_drone.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_mic.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_phone.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_sound.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_tablet.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_tableturner.jpg" alt="">
+        </div>
+        <div class="col-12 col-md-3 col-sm-6 p-2">
+            <img width="300px" src="./tech_typewriter.jpg" alt="">
+        </div>
+    </div>
+</div>
+<br>
+
+
+     
+<!-- Text Section -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- Left Half (Text) -->
+        <div class="col-md-6">
+            <h2>We know nothing</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </p>
+        </div>
+        <!-- Right Half (Image) -->
+        <div class="col-md-6">
+            <!-- Progress Bars -->
+            <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary" style="width: 90%">90%</div>
+            </div>
+            <p class="text-right">Photography</p>
+            <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary" style="width: 80%">80%</div>
+            </div>
+            <p class="text-right">Photoshop</p>
+            <div class="progress mb-3" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar bg-secondary" style="width: 75%">75%</div>
+            </div>
+            <p class="text-right">Web Design</p>
+        </div>
+
+    </div> <!-- /.row -->
+</div> <!-- /.container -->
+
+
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div id="hover1" class="card" style="transition:1s;">
+                <ul class="list-group text-center">
+                    <li class="list-group-item active bg-dark" aria-current="true">Basic</li>
+                    <li class="list-group-item" style="font-size:14px;">10GB storage</li>
+                    <li class="list-group-item">10 Emails</li>
+                    <li class="list-group-item">10 Domains</li>
+                    <li class="list-group-item">Endless support</li>
+                    <li class="list-group-item" style="font-size:12px; opacity:80%;">$10 per month</li>
+                    <li class="list-group-item">
+                        <button class="btn btn-dark">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div id="hover2" class="card" style="transition:1s;">
+                <ul class="list-group text-center">
+                    <li class="list-group-item active bg-danger" aria-current="true">Pro</li>
+                    <li class="list-group-item" style="font-size:14px;">256GB storage</li>
+                    <li class="list-group-item">25 emails</li>
+                    <li class="list-group-item">25 domains</li>
+                    <li class="list-group-item">Endless support</li>
+                    <li class="list-group-item" style="font-size:12px; opacity:80%;">$25 per month</li>
+                    <li class="list-group-item">
+                        <button class="btn btn-dark">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col">
+            <div id="hover3" class="card" style="transition:1s;">
+                <ul class="list-group text-center">
+                    <li class="list-group-item active bg-dark" aria-current="true">Premium</li>
+                    <li class="list-group-item" style="font-size:14px;">50GB storage</li>
+                    <li class="list-group-item">50 Emails</li>
+                    <li class="list-group-item">50 Domains</li>
+                    <li class="list-group-item">Endless support</li>
+                    <li class="list-group-item" style="font-size:12px; opacity:80%;">$50 per month</li>
+                    <li class="list-group-item">
+                        <button class="btn btn-dark">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Form Section -->
+<div class="col-12">   
+  <div class="card">
+      <div class="card-body" style="text-align: center;">
+          <h3 class="card-title" style="border: none;">Contact Us</h3>
+          <p style="border: none;">Let's get in touch. Send us a message.</p>
+          <div class="contact-info">
+              <p><i class="fa-solid fa-phone"></i> Phone</p>
+              <p><i class="fa-solid fa-location-dot"></i> Chicago</p>
+              <p><i class="fa-solid fa-envelope"></i> Email</p>
+          </div>
+          <form>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+              </div>
+              <div class="mb-3">
+                  <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                  <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                  <textarea class="form-control" id="formGroupExampleInput4" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+      </div>
+  </div>
+</div>
+
+<!-- Full-width image -->
+<div class="text-center col-12">
+    <img class="text-center" src="map.jpg" alt="">
+</div>
+
+<!-- Footer -->
+ <div id="top" class="col-12 bg-black d-flex flex-column" style="height: 200px; align-items: center; justify-content: center;">
+ <a href="#top" class="btn btn-black btn-lg btn-block bg-white col-4 h-10">
+        <i class="fa fa-arrow-up" aria-hidden="true">
+        </i> Go To Top
+    </a>
+
+        
+<h2 class="text-white">
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-snapchat" aria-hidden="true"></i> 
+      <i class="fa fa-pinterest" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i> 
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </h2>
+<br>
+<p class="text-white text-decoration-underline">Powerd By whoever</p>
+</div>
+</body>
+  
+  
+  
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
